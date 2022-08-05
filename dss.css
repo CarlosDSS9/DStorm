@@ -1,0 +1,116 @@
+/*
+* DStorm <|>
+* CSS Framework
+* Version 1.0.0
+*/
+
+/* Variable --------- <|> */
+:root{
+  /* Themes */
+  --th-primary  : hsl(215, 86%, 44%);
+  --th-secondary: hsl(219, 18%, 48%);
+  --th-success  : hsl(150, 77%, 27%);
+  --th-error    : hsl(347, 91%, 49%);
+  --th-accept   : hsl(177, 93%, 27%);
+  --th-cancel   : hsl(340, 94%, 50%);
+  --th-join     : hsl(288, 97%, 36%);
+  --th-search   : hsl(225, 80%, 57%);
+  --th-done     : hsl(120, 89%, 34%);
+  --th-danger   : hsl(0, 100%, 40%);
+  --th-warning  : hsl(44, 97%, 51%);
+  --th-dark     : hsl(0, 0%, 8%);
+  --th-light    : hsl(0, 0%, 94%);
+  /* Format */
+  --font        : hsl(213, 15%, 14%);
+  --main        : hsl(223, 58%, 95%);
+}
+
+/* Global --------- <|> */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+/* Formats --------- <|> */
+/* default elm */
+html{
+    background: var(--th-panel);
+    color: var(--font);
+    font-family: 'Roboto','Open Sans','Segoe UI',Arial,sans-serif;
+}
+body{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+    margin: 0;
+}
+h1{font-size: 2.30rem;}
+h2{font-size: 1.95rem;}
+h3{font-size: 1.85rem;}
+h4{font-size: 1.55rem;}
+h5{font-size: 1.35rem;}
+h6{font-size: 1.05rem;}
+a{
+    color: #1f64f9;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: .33s;
+}
+a:hover{
+    color: #1859e6;
+    text-decoration: underline;
+}
+p{margin: .60em 0;}
+ul,ol {
+    margin: 1.1rem 0;
+    padding: 0 0 0 2rem;
+}
+dl dt {
+    font-weight: 700;
+}
+dl dd {
+    margin: 0 0 0 2rem;
+}
+blockquote {
+    margin: 1rem 2rem;
+}
+fieldset {
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    padding-left: 1.1rem;
+}
+legend {
+    font-size: .95rem;
+    padding: 0;
+    box-shadow: 0 0 0 .125rem #FFF;
+}
+/* Layout --------- <|> */
+.body,.header,.nav,.section,.article,.main,.aside,.footer,.div{
+    padding: 1em;
+}
+/* Components --------- <|> */
+/* Forms */
+/* Forms->textbox */
+.textbox,
+.dropdownlist,
+.textarea{
+    background: #ffffff;
+    border: 1px solid #e1e5ef;
+    border-radius: 3px;
+    color: #4d5875;/*#4d5875*/
+    font-family: 'Roboto','Segoe UI',sans-serif;
+    font-size: .875em;
+    font-weight: 400;
+    height: 40px;
+    line-height: 1.5;
+    outline: none;
+    padding: .375em .75em;
+    transition-property: border-color;
+    transition-duration: .25s;
+}
+.textarea{
+    height: 9.375em;
+}
